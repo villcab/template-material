@@ -1,9 +1,9 @@
 <div class="wrapper">
-  <app-header></app-header>
+  <app-header (clickMenu)="snav.toggle()"></app-header>
 
-  <mat-sidenav-container>
+  <mat-sidenav-container class="app-inner">
 
-    <mat-sidenav>
+    <mat-sidenav #snav mode="side" [opened]="true">
       <app-sidebar></app-sidebar>
       <div class="ps__rail-x" style="left: 0px; bottom: -90px;">
         <div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div>

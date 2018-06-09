@@ -1,3 +1,24 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.app-inner {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  height: calc(100vh - 64px);
+  display: -moz-flex;
+  display: flex;
+  -moz-flex-direction: row;
+  flex-direction: row;
+}
+
 .example-container {
   width: 100%;
   height: 500px;
