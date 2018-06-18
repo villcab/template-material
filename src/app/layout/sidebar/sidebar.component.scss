@@ -1,0 +1,26 @@
+.mat-list-item {
+  height: auto;
+  background-color: transparent;
+  transition: background-color .3s cubic-bezier(.35, 0, .25, 1);
+}
+
+.mat-list-item-content {
+  display: block;
+  height: auto;
+  max-height: 48px;
+  overflow: hidden;
+  padding: 0;
+  transition: max-height .3s cubic-bezier(.35, 0, .25, 1);
+}
+
+.navigation > .mat-icon {
+  margin-right: 24px;
+}
+
+.mat-nav-list a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 48px;
+  padding: 0 16px;
+}

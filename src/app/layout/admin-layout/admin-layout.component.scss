@@ -8,31 +8,33 @@
   right: 0;
 }
 
-.app-inner {
+.sidenav-container {
   position: relative;
   width: 100%;
   max-width: 100%;
   height: calc(100vh - 64px);
   display: -moz-flex;
   display: flex;
-  -moz-flex-direction: row;
   flex-direction: row;
 }
 
-.example-container {
-  width: 100%;
-  height: 500px;
-  border: 1px solid rgba(0, 0, 0, 0.5);
+.sidebar-panel {
+  position: absolute !important;
+  overflow-x: hidden;
+  width: 15rem;
+  box-shadow: 0 2px 1px -1px rgba(0, 0, 0, .2), 0 1px 1px 0 rgba(0, 0, 0, .14), 0 1px 3px 0 rgba(0, 0, 0, .12) !important;
 }
 
-.example-sidenav-content {
-  display: flex;
+.main-container {
+  position: relative;
   height: 100%;
-  align-items: center;
-  justify-content: center;
-}
-
-.example-sidenav {
-  padding: 20px;
-  background-color: #3F51B5;
+  min-height: 100%;
+  box-sizing: border-box;
+  flex-direction: column;
+  display: -moz-flex;
+  display: flex;
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: .33333333rem;
 }
